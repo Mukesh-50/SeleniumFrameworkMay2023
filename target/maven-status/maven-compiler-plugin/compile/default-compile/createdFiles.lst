@@ -1,0 +1,9 @@
+com\learnautomation\dataProvider\CustomDataProvider.class
+com\learnautomation\dataProvider\ConfigReader.class
+com\learnautomation\factory\BrowserFactory.class
+com\learnautomation\pages\LoginPage.class
+com\learnautomation\helper\Utility.class
+com\learnautomation\listeners\ExtentManager.class
+com\learnautomation\base\BaseClass.class
+com\learnautomation\listeners\ExtentTestNGITestListener.class
+com\learnautomation\dataProvider\ExcelReader.class
