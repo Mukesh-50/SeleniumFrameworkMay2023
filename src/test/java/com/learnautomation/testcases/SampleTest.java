@@ -23,6 +23,8 @@ public class SampleTest
 	{
 		System.out.println("Hello 3");
 		Assert.assertTrue(false);
+		System.out.println("Hello 7");
+		Assert.assertTrue(false);
 	}
 
 }
