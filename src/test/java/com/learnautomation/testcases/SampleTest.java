@@ -16,15 +16,19 @@ public class SampleTest
 	public void sample2()
 	{
 		System.out.println("Hello 2");
+		System.out.println("Hello 2.1");
+		System.out.println("Hello 2.2");
 	}
 	
 	@Test
 	public void sample3()
 	{
 		System.out.println("Hello 3");
-		Assert.assertTrue(false);
-		System.out.println("Hello 7");
-		Assert.assertTrue(false);
+    	System.out.println("Hello 4");
+		System.out.println("Hello 5");
+		System.out.println("Hello 6");
+    	System.out.println("Hello 7");
+		Assert.assertTrue(true);
 	}
 
 }
