@@ -24,9 +24,10 @@ public class SampleTest
 	public void sample3()
 	{
 		System.out.println("Hello 3");
-		System.out.println("Hello 4");
+    	System.out.println("Hello 4");
 		System.out.println("Hello 5");
 		System.out.println("Hello 6");
+    	System.out.println("Hello 7");
 		Assert.assertTrue(true);
 	}
 
