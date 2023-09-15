@@ -29,6 +29,8 @@ public class SampleTest
 		System.out.println("Hello 6");
     	System.out.println("Hello 7");
     	System.out.println("Hello 7");
+    	System.out.println("Hello 7");
+    	System.out.println("Hello 8");
 		Assert.assertTrue(true);
 	}
 
