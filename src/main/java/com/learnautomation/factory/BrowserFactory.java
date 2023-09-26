@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -23,8 +24,11 @@ public class BrowserFactory
 		
 		if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("GC") || browserName.equalsIgnoreCase("Google Chrome"))
 		{
+			ChromeOptions opt=new ChromeOptions();
+			opt.addArguments("--headless");
+			opt.addArguments("--no-sandbox");
 			// read headless property from config file and if set to true then run the test in headless mode via --headless argument
-			driver=new ChromeDriver();
+			driver=new ChromeDriver(opt);
 			
 		} else if(browserName.equalsIgnoreCase("Firefox") || browserName.equalsIgnoreCase("FF") || browserName.equalsIgnoreCase("Mozila"))
 		{
