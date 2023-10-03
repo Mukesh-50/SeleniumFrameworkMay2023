@@ -28,6 +28,9 @@ public class BrowserFactory
 		
 		if(browserName.equalsIgnoreCase("Chrome") || browserName.equalsIgnoreCase("GC") || browserName.equalsIgnoreCase("Google Chrome"))
 		{
+			
+			System.out.println("Browser Ccaptured "+browserName);
+			
 			ChromeOptions opt=new ChromeOptions();
 			
 			opt.addArguments("--no-sandbox");
@@ -44,7 +47,7 @@ public class BrowserFactory
 			
 			try 
 			{
-				driver=new RemoteWebDriver(new URL("http://34.207.71.118:4444/wd/hub"), capabilities);
+				driver=new RemoteWebDriver(new URL("http://34.207.71.118:4444/wd/hub"), opt);
 				
 			} catch (MalformedURLException e) {
 				
